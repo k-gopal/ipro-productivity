@@ -9,7 +9,7 @@ import persistReducer from "redux-persist/es/persistReducer";
 // import logger from 'redux-logger';
 
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+const composeEnhancers = compose;
 
 export const history = createBrowserHistory({ basename: "/" });
 

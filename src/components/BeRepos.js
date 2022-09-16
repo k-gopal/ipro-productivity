@@ -9,11 +9,11 @@ const BeRepos = () => {
                 <i className='bi bi-kanban-fill me-2'></i>
                 <u>Backend Repositories </u>
             </div>
-            <ul class='list-group list-group-flush'>
+            <ul className='list-group list-group-flush'>
                 {Object.keys(beRepos).map((ele) => {
                     return (
-                        <li class='list-group-item btn text-start btn-light' onClick={() => openInNewTab(beRepos[ele])}>
-                            <i class='bi bi-arrow-up-right-square-fill me-2'></i>
+                        <li className='list-group-item btn text-start btn-light' onClick={() => openInNewTab(beRepos[ele])}>
+                            <i className='bi bi-arrow-up-right-square-fill me-2'></i>
                             {ele}
                         </li>
                     );

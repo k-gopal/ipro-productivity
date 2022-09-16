@@ -49,10 +49,58 @@ const jiraProjects = {
     UTS: 'https://utec.atlassian.net/browse/UTS-',
 };
 
+const onetechnical = {
+    "Dev": "https://d1e6yiez0hqgz1.cloudfront.net/",
+    "Stage": "https://onetechnical.utecstage.com/",
+    "Preprod": "https://onetechnical-preprod.utecstage.com/",
+    "Prod": "https://onetechnical.utecbuild.com/"
+}
+
+const adminPanel = {
+    "Dev": "https://test-admin.utecstage.com/",
+    "Stage": "https://admin.utecstage.com/",
+    "Preprod": "https://admin-preprod.utecstage.com/",
+    "Prod": "https://admin.utecbuild.com/"
+}
+
+const ccp = {
+    "Dev": "https://d3hltqg7xurqp6.cloudfront.net/login",
+    "Stage": "https://experience.utecstage.com/login",
+    "Preprod": "https://cx-preprod.utecstage.com/login",
+    "Prod": "https://experience.utecbuild.com/login"
+}
+
+const mmms = {
+    "Dev": "",
+    "Stage": "https://meramakaan.utecstage.com/",
+    "Preprod": "",
+    "Prod": "https://meramakaan.utecbuild.com/"
+}
+
+const bpd = {
+    "Dev": "",
+    "Stage": "https://bpdloyalty.utecstage.com/home",
+    "Preprod": "https://dfoh5qngxb25s.cloudfront.net/",
+    "Prod": "https://bpdloyalty.utecbuild.com/"
+}
+
+const webApp = {
+    "Dev": "",
+    "Stage": "https://utecstage.com/",
+    "Preprod": "",
+    "Prod": "https://utecbuild.com/"
+}
+
 module.exports = {
     beRepos,
     feRepos,
     jiraShortcuts,
     commonShortcuts,
     jiraProjects,
+    onetechnical,
+    adminPanel,
+    ccp,
+    bpd,
+    mmms,
+    webApp
 };

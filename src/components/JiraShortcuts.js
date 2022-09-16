@@ -9,11 +9,11 @@ const JiraShortcuts = () => {
                 <i className='bi bi-kanban-fill me-2'></i>
                 <u>Jira Shortcuts</u>
             </div>
-            <ul class='list-group list-group-flush'>
+            <ul className='list-group list-group-flush'>
                 {Object.keys(jiraShortcuts).map((ele) => {
                     return (
-                        <li class='list-group-item btn text-start btn-light' onClick={() => openInNewTab(jiraShortcuts[ele])}>
-                            <i class="bi bi-arrow-up-right-square-fill me-2"></i>{ele}
+                        <li className='list-group-item btn text-start btn-light' onClick={() => openInNewTab(jiraShortcuts[ele])}>
+                            <i className="bi bi-arrow-up-right-square-fill me-2"></i>{ele}
                         </li>
                     );
                 })}

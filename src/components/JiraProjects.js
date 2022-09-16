@@ -20,19 +20,19 @@ const JiraProjects = () => {
             <div>
                 {Object.keys(jiraProjects).map((ele) => {
                     return (
-                        <div class='form-check' onClick={() => setChecked(ele)}>
-                            <input class='form-check-input' type='checkbox' value='' id={`jiraProjectChecks-${ele}`} checked={ele === checked} />
-                            <label class='form-check-label' for='flexCheckDefault'>
+                        <div className='form-check' onClick={() => setChecked(ele)}>
+                            <input className='form-check-input' type='checkbox' value='' id={`jiraProjectChecks-${ele}`} checked={ele === checked} />
+                            <label className='form-check-label' for='flexCheckDefault'>
                                 {ele}
                             </label>
                         </div>
                     );
                 })}
-                <div class='my-3'>
+                <div className='my-3'>
                     <form action={handleSubmit}>
-                        <label class='form-label'>Ticket ID:</label>
-                        <input type='text' class='form-control' value={ticket} onChange={(e) => setTicket(e.target.value)} placeholder='Enter ticket ID to search...' />
-                        <button type='submit' onClick={handleSubmit} class='btn btn-dark my-3 float-right'>
+                        <label className='form-label'>Ticket ID:</label>
+                        <input type='text' className='form-control' value={ticket} onChange={(e) => setTicket(e.target.value)} placeholder='Enter ticket ID to search...' />
+                        <button type='submit' onClick={handleSubmit} className='btn btn-dark my-3 float-right'>
                             Open Ticket
                         </button>
                     </form>

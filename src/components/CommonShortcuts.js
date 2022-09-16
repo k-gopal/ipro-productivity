@@ -9,11 +9,11 @@ const CommonShortcuts = () => {
                 <i className='bi bi-kanban-fill me-2'></i>
                 <u>Common Shortcuts</u>
             </div>
-            <ul class='list-group list-group-flush'>
+            <ul className='list-group list-group-flush'>
                 {Object.keys(commonShortcuts).map((ele) => {
                     return (
-                        <li class='list-group-item btn text-start btn-light' onClick={() => openInNewTab(commonShortcuts[ele])}>
-                            <i class="bi bi-bookmark-fill me-2"></i>{ele}
+                        <li className='list-group-item btn text-start btn-light' onClick={() => openInNewTab(commonShortcuts[ele])}>
+                            <i className="bi bi-bookmark-fill me-2"></i>{ele}
                         </li>
                     );
                 })}

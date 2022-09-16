@@ -26,14 +26,14 @@ const CreateTask = ({ appReducer, setTask, deleteTask }) => {
     return (
         <>
             <div className='fw-bold '>
-                <i class='bi bi-list-ul me-2'></i>
+                <i className='bi bi-list-ul me-2'></i>
                 CreateTask
             </div>
             <div>
                 <form action={(e) => handleSubmit(e)}>
-                    <label class='form-label'>Task Name:</label>
-                    <input type='text' class='form-control' onChange={(e) => setTasks(e.target.value)} value={task} placeholder='Enter task name...' />
-                    <button type='submit' onClick={(e) => handleSubmit(e)} class='btn btn-dark my-3 float-right'>
+                    <label className='form-label'>Task Name:</label>
+                    <input type='text' className='form-control' onChange={(e) => setTasks(e.target.value)} value={task} placeholder='Enter task name...' />
+                    <button type='submit' onClick={(e) => handleSubmit(e)} className='btn btn-dark my-3 float-right'>
                         Create Task
                     </button>
                 </form>
@@ -43,9 +43,9 @@ const CreateTask = ({ appReducer, setTask, deleteTask }) => {
                 {appReducer?.tasks?.length &&
                     appReducer?.tasks.map((ele) => (
                         <>
-                            <div class='form-check' onClick={() => deleteTask(ele?.id)}>
-                                <input class='form-check-input' type='checkbox' />
-                                <label class='form-check-label' for='flexCheckDefault'>
+                            <div className='form-check' onClick={() => deleteTask(ele?.id)}>
+                                <input className='form-check-input' type='checkbox' />
+                                <label className='form-check-label' for='flexCheckDefault'>
                                     {ele?.name}
                                 </label>
                             </div>

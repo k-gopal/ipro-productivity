@@ -9,11 +9,11 @@ const FeRepos = () => {
                 <i className='bi bi-kanban-fill me-2'></i>
                 <u>Frontend Repositories</u>
             </div>
-            <ul class='list-group list-group-flush'>
+            <ul className='list-group list-group-flush'>
                 {Object.keys(feRepos).map((ele) => {
                     return (
-                        <li class='list-group-item btn text-start btn-light' onClick={() => openInNewTab(feRepos[ele])}>
-                            <i class='bi bi-arrow-up-right-square-fill me-2'></i>
+                        <li className='list-group-item btn text-start btn-light' onClick={() => openInNewTab(feRepos[ele])}>
+                            <i className='bi bi-arrow-up-right-square-fill me-2'></i>
                             {ele}
                         </li>
                     );

@@ -49,31 +49,31 @@ const Header = ({ setName, appReducer }) => {
 
     return (
         <>
-            <header class='d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom'>
-                <a href='/' class='d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none'>
-                    <span class='fs-4'>Hi, {appReducer?.name}!</span>
+            <header className='d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom'>
+                <a href='/' className='d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none'>
+                    <span className='fs-4'>Hi, {appReducer?.name}!</span>
                 </a>
 
-                <ul class='nav'>
-                    <li class='nav-item fs-4'>{days[new Date().getDay()]}, {date}</li>
+                <ul className='nav'>
+                    <li className='nav-item fs-4'>{days[new Date().getDay()]}, {date}</li>
                 </ul>
             </header>
-            <button id='getUserName' hidden type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#staticBackdrop'>
+            <button id='getUserName' hidden type='button' className='btn btn-primary' data-bs-toggle='modal' data-bs-target='#staticBackdrop'>
                 Launch static backdrop modal
             </button>
-            <div class='modal fade' id='staticBackdrop' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <div class='modal-header'>
-                            <h5 class='modal-title' id='staticBackdropLabel'>
+            <div className='modal fade' id='staticBackdrop' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>
+                <div className='modal-dialog'>
+                    <div className='modal-content'>
+                        <div className='modal-header'>
+                            <h5 className='modal-title' id='staticBackdropLabel'>
                                 User Name
                             </h5>
                         </div>
-                        <div class='modal-body'>
-                            <input type='email' onChange={(e) => setStateName(e.target.value)} class='form-control' placeholder='Your Name' />
+                        <div className='modal-body'>
+                            <input type='email' onChange={(e) => setStateName(e.target.value)} className='form-control' placeholder='Your Name' />
                         </div>
-                        <div class='modal-footer'>
-                            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal' onClick={() => setName(name)}>
+                        <div className='modal-footer'>
+                            <button type='button' className='btn btn-secondary' data-bs-dismiss='modal' onClick={() => setName(name)}>
                                 Save
                             </button>
                         </div>

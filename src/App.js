@@ -5,12 +5,13 @@ import FeRepos from './components/FeRepos';
 import Header from './components/Header';
 import JiraProjects from './components/JiraProjects';
 import JiraShortcuts from './components/JiraShortcuts';
+import Panels from './components/Panels';
 
 function App() {
     return (
         <div className='container'>
             <Header />
-            <div className='row g-2'>
+            <div className='row g-2 mb-2'>
                 <div className='col-4'>
                     <div className='shadow p-3 mb-5 bg-body rounded h-100 w-100'>
                         <JiraProjects />
@@ -27,7 +28,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className='row g-2 my-2'>
+            <div className='row g-2 mb-2'>
                 <div className='col-4'>
                     <div className='shadow p-3 mb-5 bg-body rounded h-100 w-100'>
                         <FeRepos />
@@ -43,6 +44,9 @@ function App() {
                         <CreateTask />
                     </div>
                 </div>
+            </div>
+            <div className='row g-2 mb-2'>
+                <Panels />
             </div>
             <div className='shadow p-3 mb-5 bg-body rounded h-100 w-100'>
                 Built By:{' '}
