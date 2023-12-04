@@ -47,6 +47,7 @@ const jiraProjects = {
     EA: 'https://utec.atlassian.net/browse/EA-',
     QT: 'https://utec.atlassian.net/browse/QT-',
     UTS: 'https://utec.atlassian.net/browse/UTS-',
+    PET: 'https://utec.atlassian.net/browse/PET-',
 };
 
 const onetechnical = {
