@@ -1,4 +1,5 @@
 const beRepos = {
+    'DB Artefacts': 'https://bitbucket.org/utecdev/db-artefacts/src/main/',
     'Service Request Backend': 'https://bitbucket.org/utecdev/service-requests-backend/src/master/',
     'Polaris': 'https://bitbucket.org/utecdev/polaris-backend/src/master/',
     'Utec Microservices': 'https://bitbucket.org/utecdev/utec-microservices/src/master/',
@@ -10,7 +11,7 @@ const beRepos = {
     'Design Management': 'https://bitbucket.org/utecdev/designs-management/src/master/',
     'Service Notification': 'https://bitbucket.org/utecdev/service-notification-engine/src/master/',
     'Referral System': 'https://bitbucket.org/utecdev/referral-system/src/master/',
-    'MMMS': 'https://bitbucket.org/utecdev/mmms-backend/src/master/',
+    'MMMS': 'https://bitbucket.org/utecdev/mmms-backend/src/master/'
 };
 
 const feRepos = {
@@ -24,6 +25,10 @@ const feRepos = {
     'Partner Android': 'https://bitbucket.org/utecdev/partner-android/src/master/',
     'IHB IOS': 'https://bitbucket.org/utecdev/ihb-ios-app/src/master/',
     'Partner IOS': 'https://bitbucket.org/utecdev/partner-ios/src/master/',
+    'SR Tracker (Standalone)': 'https://bitbucket.org/utecdev/sr-tracker-webapp/src/master/',
+    'KIOSK': 'https://bitbucket.org/utecdev/utec-kiosk-frontend/src/main/',
+    'Utec Web (CMS)': 'https://bitbucket.org/utecdev/utecbuild-web/src/master/',
+    'Utec Web CMS Panel': 'https://bitbucket.org/utecdev/strapi-cms/src/master/'
 };
 
 const jiraShortcuts = {
