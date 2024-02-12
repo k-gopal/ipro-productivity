@@ -1,5 +1,5 @@
 const beRepos = {
-    'Service Request Backend': 'https://bitbucket.org/utecdev/service-request-backend/src/master/',
+    'Service Request Backend': 'https://bitbucket.org/utecdev/service-requests-backend/src/master/',
     'Polaris': 'https://bitbucket.org/utecdev/polaris-backend/src/master/',
     'Utec Microservices': 'https://bitbucket.org/utecdev/utec-microservices/src/master/',
     'Service SR Tracker': 'https://bitbucket.org/utecdev/service-sr-tracker/src/master/',
